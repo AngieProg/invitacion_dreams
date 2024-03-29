@@ -6,40 +6,28 @@ import {
   whatsapp,
   persona,
   reloj,
+  confirmar,
   iglesiaPrograma,
   recepcionPrograma,
   comidaPrograma,
   valsPrograma,
+  gps,
   //circuloRosa,
 } from "./../assets/icons";
 
-import {
-  galeria1,
-  galeria2,
-  //galeria3,
-  galeria4,
-  //galeria5,
-  galeria6,
-  historia2,
-  historia3,
-  hisotria1,
-  // historia4,
-  // historia5,
-  // historia6,
-  // historia7,
-  // historia8,
-  // historia9,
-  // historia10,
-  historia11,
-  iglesiaFoto,
-  salon,
-  padres,
-  padrinos,
-} from "./../assets/images";
+import { iglesiaUbicacion, salon } from "./../assets/images";
+
+export const Invitados = [
+  {
+    id: 1,
+    nombre: "Ricardo Mtz y Esposa",
+    adultos: 2,
+  },
+];
 
 export const ubicaciones = [
   {
-    img: iglesiaFoto,
+    img: iglesiaUbicacion,
     icon: iglesia,
     titulo1: "CEREMONIA RELIGIOSA",
     titulo2: "Catedral Toluca de Lerdo",
@@ -47,7 +35,8 @@ export const ubicaciones = [
     hora: "13:00",
     parrafo: "Av. Independencia 303, Centro, 50000 Toluca de Lerdo, Méx.",
     btn1: "VER EN GPS",
-    url1: '"https://maps.app.goo.gl/r6GejTonLwqwEt1o6"',
+    url1: "https://maps.app.goo.gl/r6GejTonLwqwEt1o6",
+    icon3: gps,
   },
   {
     img: salon,
@@ -59,7 +48,8 @@ export const ubicaciones = [
     parrafo:
       "Calle Ignacio López Rayón Tejocote 320, 50010 Santiago Miltepec, Méx.",
     btn1: "VER EN GPS",
-    url1: '"https://maps.app.goo.gl/kdzPSM31eNd3YAXs6"',
+    url1: "https://maps.app.goo.gl/kdzPSM31eNd3YAXs6",
+    icon3: gps,
   },
 ];
 export const confirmaciones = [
@@ -69,8 +59,9 @@ export const confirmaciones = [
     titulo2: "Whatsapp",
     btn1: "7221406931",
     btn2: "7228444568",
-    url1: '"https://wa.me/52111111"',
-    url2: '"https://wa.me/52222222"',
+    url1: "https://wa.me/7221406931",
+    url2: "https://wa.me/7228444568",
+    icon3: confirmar,
   },
   {
     icon: llamada,
@@ -78,8 +69,9 @@ export const confirmaciones = [
     titulo2: "Llamada",
     btn1: "7221406931",
     btn2: "7228444568",
-    url1: '"https://wa.me/523333333"',
-    url2: '"https://wa.me/524444444"',
+    url1: "tel:+527221406931",
+    url2: "tel:+527228444568",
+    icon3: confirmar,
   },
   /*{
     icon: email,
@@ -88,7 +80,6 @@ export const confirmaciones = [
     btn1: "Enviar",
   },*/
 ];
-
 export const datosInvitado = [
   {
     icon2: persona,
@@ -105,96 +96,6 @@ export const datosInvitado = [
   //   label: "ASIENTO",
   //   input: "3-5",
   // },
-];
-
-export const slideData = [
-  {
-    id: 1,
-    img: galeria1,
-    alt: "Foto 1",
-  },
-  {
-    id: 2,
-    img: galeria2,
-    alt: "Foto 2",
-  },
-  /*{
-    id: 3,
-    img: galeria3,
-    alt: "Foto 3",
-  },*/
-  {
-    id: 4,
-    img: galeria4,
-    alt: "Foto 4",
-  },
-  /*{
-    id: 5,
-    img: galeria5,
-    alt: "Foto 4",
-  },*/
-  {
-    id: 6,
-    img: galeria6,
-    alt: "Foto 4",
-  },
-];
-export const historia = [
-  {
-    id: 1,
-    img: hisotria1,
-    alt: "Foto 1",
-  },
-  {
-    id: 2,
-    img: historia2,
-    alt: "Foto 2",
-  },
-  {
-    id: 3,
-    img: historia3,
-    alt: "Foto 3",
-  },
-  // {
-  //   id: 4,
-  //   img: historia4,
-  //   alt: "Foto 4",
-  // },
-  // {
-  //   id: 5,
-  //   img: historia5,
-  //   alt: "Foto 5",
-  // },
-  // {
-  //   id: 6,
-  //   img: historia6,
-  //   alt: "Foto 6",
-  // },
-  // {
-  //   id: 7,
-  //   img: historia7,
-  //   alt: "Foto 7",
-  // },
-  // {
-  //   id: 8,
-  //   img: historia8,
-  //   alt: "Foto 8",
-  // },
-  // {
-  //   id: 9,
-  //   img: historia9,
-  //   alt: "Foto 9",
-  // },
-  // {
-  //   id: 10,
-  //   img: historia10,
-  //   alt: "Foto 10",
-  // },
-  {
-    id: 11,
-    img: historia11,
-    alt: "Foto 11",
-  },
 ];
 
 export const programa = [
@@ -226,13 +127,11 @@ export const familia = [
     titulo2: "Mis Padres",
     nombre1: "Maria del Carmen Martínez Valdez ",
     nombre2: "Horacio Pablo Flores",
-    img: padres,
   },
   {
     titulo1: "PADRINOS DE VELACIÓN",
     titulo2: "Mis Padrinos",
     nombre1: "María Guadalupe Martínez Valdez",
     nombre2: "Rigoberto Baltazar de Santiago",
-    img: padrinos,
   },
 ];

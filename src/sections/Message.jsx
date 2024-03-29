@@ -1,9 +1,9 @@
 import { Parallax } from "react-parallax";
-import { photoBackground } from "../assets/images";
+import { fotoBackground } from "../assets/images";
 
 const Message = () => (
   <Parallax
-    bgImage={photoBackground}
+    bgImage={fotoBackground}
     strength={800}
     className="relative h-[100vh]"
   >

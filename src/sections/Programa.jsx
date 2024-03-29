@@ -3,7 +3,7 @@ import { separador } from "../assets/icons";
 
 const Programa = () => {
   return (
-    <section className="flex flex-col justify-center items-center bg-black py-4 md:py-11">
+    <section className="flex flex-col justify-center items-center bg-soft-pink py-4 md:py-11">
       <div className="flex flex-col items-center pt-6">
         <h1
           className="font-mea text-4xl mb-1 text-dark-brown md:text-8xl"
@@ -36,7 +36,7 @@ const Programa = () => {
                 className="h-[80px] flex flex-col justify-center items-center"
                 data-aos="fade-left"
               >
-                <p className="text-xl text-dark-pink text-center md:text-2xl font-montserrat mb-1">
+                <p className="text-xl text-dark-brown text-center md:text-2xl font-montserrat mb-1">
                   {actividad.hora}
                 </p>
                 <p className="text-xl text-dark-brown text-center md:text-2xl font-sofia">

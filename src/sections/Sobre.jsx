@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { musicPausa, musicPlay } from "./../assets/icons";
 import Swal from "sweetalert2";
-import { sobreSello } from "../assets/images";
+import { sobre } from "../assets/images";
 import { cancion } from "../assets/music";
 
 const Sobre = () => {
@@ -30,7 +30,7 @@ const Sobre = () => {
     Swal.fire({
       title: "¡Bienvenido!",
       text: "¿Desesa ingresar con música?",
-      imageUrl: sobreSello,
+      imageUrl: sobre,
       imageWidth: 350,
       imageHeight: 280,
       imageAlt: "Custom image",
@@ -56,7 +56,7 @@ const Sobre = () => {
       <img
         src={isPlaying ? musicPausa : musicPlay}
         alt="menu music"
-        className="w-[28px] h-[28px] object-contain"
+        className="w-[28px] h-[28px] object-contain z-10"
         onClick={handlePlayPause}
       />
       <audio ref={audioRef} src={cancion} />

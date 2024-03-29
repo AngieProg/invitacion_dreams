@@ -37,10 +37,6 @@ export default {
       },
       backgroundImage: {
         hero: "url('assets/images/photo_background.jpg')",
-        sabana: "url('assets/images/background_sabana.jpg')",
-        circulo: "url('assets/icons/circuloRosa.png')",
-        banner: "url('assets/icons/banner.png')",
-        agradecimiento: "url('assets/images/cover_background.jpg')",
       },
       screens: {
         wide: "1440px",

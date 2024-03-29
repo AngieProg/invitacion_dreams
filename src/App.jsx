@@ -2,15 +2,13 @@ import { useEffect } from "react";
 import {
   Contador,
   Familia,
-  Galeria,
   Invitado,
   Message,
-  MiHistoria,
   Ubicaciones,
   Programa,
-  Agradecimiento,
   Hero,
   Confirmacion,
+  Regalo,
 } from "./sections";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -29,26 +27,20 @@ const App = () => {
       <section>
         <Ubicaciones />
       </section>
-      <section className="flex justify-center py-8 px-8">
+      <section>
         <Contador />
       </section>
-      <section>
+      {/* <section>
         <Familia />
-      </section>
-      <section className="padding">
-        <MiHistoria />
-      </section>
+      </section> */}
       <section>
         <Programa />
       </section>
-      <section className="padding-x sm:pt-24 pt-12">
-        <Galeria />
-      </section>
+      {/* <section>
+        <Regalo />
+        */}
       <section className="padding">
         <Confirmacion />
-      </section>
-      <section className="flex justify-center">
-        <Agradecimiento />
       </section>
     </main>
   );

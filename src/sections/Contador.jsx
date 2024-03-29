@@ -1,4 +1,4 @@
-import { globos, imgContador } from "./../assets/images";
+import { bici } from "./../assets/images";
 import Reloj from "./../components/Reloj";
 import { useState, useEffect } from "react";
 
@@ -50,7 +50,7 @@ const Contador = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center w-[350px] border-dashed md:w-[700px] border-primary border-4">
+    <div className="flex flex-col items-center bg-soft-pink">
       {/* Titulo */}
       <div data-aos="fade-right">
         {showEndScreen.show ? (
@@ -69,22 +69,6 @@ const Contador = () => {
         )}
       </div>
 
-      {/* Imagenes centrales */}
-      <div className="flex flex-row-reverse w-[390px] h-[320px] md:w-[900px] md:h-[500px] mt-3 mb-5 bg-white justify-center overflow-visible">
-        <img
-          src={imgContador}
-          alt="quinceañera"
-          className="w-[200px] h-[320px] md:w-[400px] md:h-[500px]"
-          data-aos="zoom-in"
-        />
-        <img
-          src={globos}
-          alt="globos"
-          className="w-[200px] h-[320px] md:w-[400px] md:h-[500px]"
-          data-aos="fade-up"
-        />
-      </div>
-
       {/* Circulos con tiempo y medidas de tiempo */}
       <div className="flex flex-wrap justify-between items-center w-[300px] mb-3 md:w-[500px]">
         <Reloj tiempo={time.days} medida="Dìas" />
@@ -94,6 +78,16 @@ const Contador = () => {
         <Reloj tiempo={time.minutes} medida="Minutos" />
 
         <Reloj tiempo={time.seconds} medida="Segundos" />
+      </div>
+
+      {/* Imagenes centrales */}
+      <div className="flex w-[390px] h-[320px] md:w-[900px] md:h-[500px] mt-3 mb-5  justify-center">
+        <img
+          src={bici}
+          alt="chica en bici"
+          className="w-[200px] h-[320px] md:w-[400px] md:h-[500px]"
+          data-aos="zoom-in"
+        />
       </div>
     </div>
   );
