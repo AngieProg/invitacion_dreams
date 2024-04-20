@@ -8,7 +8,8 @@ import {
   Programa,
   Hero,
   Confirmacion,
-  Regalo,
+  Regalos,
+  CodigoVestimenta
 } from "./sections";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -23,22 +24,25 @@ const App = () => {
       <section>
         <Message />
       </section>
+      <section>
+        <Programa />
+      </section>
       <Invitado />
+      <section>
+        <Familia />
+      </section>
       <section>
         <Ubicaciones />
       </section>
       <section>
         <Contador />
       </section>
-      {/* <section>
-        <Familia />
-      </section> */}
-      <section>
-        <Programa />
+      <section className="padding">
+        <CodigoVestimenta />
       </section>
-      {/* <section>
-        <Regalo />
-        */}
+      <section>
+        <Regalos />
+      </section>
       <section className="padding">
         <Confirmacion />
       </section>

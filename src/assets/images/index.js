@@ -19,6 +19,9 @@ import fotoBackground from "./message/photoBackground.jpeg";
 import mono from "./regalo/mono.png";
 import regalo from "./regalo/regalo.png";
 import magia from "./invitados/magia.jpg";
+import fondoInferior from "./programa/fondo_inferior.png";
+import fondoSuperior from "./programa/fondo_superior.png";
+import sobreRegalo from "./regalo/sobre_regalo.png";
 
 export {
   letraS,
@@ -41,5 +44,8 @@ export {
   separadorCorazon,
   mono,
   regalo,
+  sobreRegalo,
   magia,
+  fondoInferior,
+  fondoSuperior,
 };

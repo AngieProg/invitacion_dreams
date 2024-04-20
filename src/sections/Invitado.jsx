@@ -34,7 +34,7 @@ const Invitado = () => {
                     className="w-[20px] h-[20px] md:w-[40px] md:h-[40px]"
                   />
                   <p className="font-montserrat text-2xl ml-3 text-dark-brown md:text-3xl">
-                    PASES
+                    Boletos
                   </p>
                 </div>
                 <p className="font-sofia text-2xl ml-3 uppercase text-dark-brown md:text-3xl">

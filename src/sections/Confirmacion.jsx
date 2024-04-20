@@ -10,9 +10,6 @@ const Confirmacion = () => (
           <h2 className="font-mea text-3.5xl text-center text-dark-brown md:text-6xl">
             Confirmación de asistencia
           </h2>
-          <h3 className="font-sofia text-base text-center px-5 md:mb-2 text-dark-brown md:text-2xl">
-            Favor de confirmar tu asistencia antes del día 18 de Marzo del 2024
-          </h3>
         </div>
       </div>
       <img
@@ -20,7 +17,7 @@ const Confirmacion = () => (
         alt="Separador"
         className="w-[150px] md:w-[300px] md:mb-11 mb-8"
       />
-      <div className="flex flex-wrap gap-5 justify-center md:px-10 md:gap-9">
+      <div className="flex flex-wrap gap-5 justify-center px-3 md:px-10 md:gap-9">
         {confirmaciones.map((confirmacion, index) => (
           <div key={index}>
             <div className="flex flex-col border-dark-pink border-4 justify-center items-center px-8 py-8 mb-5 w-[300px] shadow-3xl">
@@ -60,20 +57,6 @@ const Confirmacion = () => (
                     className="w-[20px] h-[20px]"
                   />
                   {confirmacion.btn1}
-                </Link>
-              </div>
-              <div data-aos="flip-down">
-                <Link
-                  target={"_blank"}
-                  to={confirmacion.url2}
-                  className="pink_gradient flex justify-around items-center border-2 border-dark-brown rounded-2xl p-1 mb-3 w-[150px]"
-                >
-                  <img
-                    src={confirmacion.icon3}
-                    alt="gps"
-                    className="w-[20px] h-[20px]"
-                  />
-                  {confirmacion.btn2}
                 </Link>
               </div>
             </div>

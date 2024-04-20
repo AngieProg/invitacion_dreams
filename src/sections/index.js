@@ -6,18 +6,18 @@ import Invitado from "./Invitado";
 import Message from "./Message";
 import Ubicaciones from "./Ubicaciones";
 import Programa from "./Programa";
-import Parallax from "./Parallax";
-import Regalo from "./Regalo";
+import Regalos from "./Regalos";
+import CodigoVestimenta from "./CodigoVestimenta";
 
 export {
   Hero,
-  Regalo,
+  Regalos,
   Confirmacion,
   Contador,
+  CodigoVestimenta,
   Familia,
   Invitado,
   Message,
   Programa,
   Ubicaciones,
-  Parallax,
 };

@@ -1,4 +1,4 @@
-import { bici } from "./../assets/images";
+import { bici, mainInferiro, mainSuperior } from "./../assets/images";
 import Reloj from "./../components/Reloj";
 import { useState, useEffect } from "react";
 
@@ -16,7 +16,7 @@ const Contador = () => {
     message: "¡Hoy es el gran día!",
   });
 
-  const targetDate = new Date("april 27, 2024 13:00:00");
+  const targetDate = new Date("may 25, 2024 13:45:00");
 
   useEffect(() => {
     const timerInterval = setInterval(() => {
@@ -50,19 +50,30 @@ const Contador = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center bg-soft-pink">
+    <div className="flex flex-col items-center justify-center bg-soft-pink h-[100vh] relative mb-5">
+      {/* Imagenes top y bottom */}
+      <img
+        src={mainSuperior}
+        alt="adorno superior"
+        className="w-full h-[220px] top-0 absolute"
+      />
+      <img
+        src={mainInferiro}
+        alt="adorno inferior"
+        className="w-full h-[170px] bottom-0 absolute "
+      />
       {/* Titulo */}
-      <div data-aos="fade-right">
+      <div data-aos="fade-right" className="z-10 mb-5 pt-10">
         {showEndScreen.show ? (
           <h3 className="font-mea text-4xl px-14 py-4 md:text-6xl">
             {showEndScreen.message}
           </h3>
         ) : (
           <div
-            className="flex flex-col items-center pt-6"
-            data-aos="fade-right"
+            className="flex flex-col items-center"
+            //data-aos="fade-right"
           >
-            <h1 className="font-mea text-4xl mb-1 text-dark-brown md:text-6xl">
+            <h1 className="font-mea text-6xl mb-1 text-dark-brown md:text-6xl">
               ¡Solo Faltan!
             </h1>
           </div>
@@ -81,7 +92,7 @@ const Contador = () => {
       </div>
 
       {/* Imagenes centrales */}
-      <div className="flex w-[390px] h-[320px] md:w-[900px] md:h-[500px] mt-3 mb-5  justify-center">
+      <div className="flex w-[390px] h-[320px] md:w-[900px] md:h-[500px] mb-5  justify-center">
         <img
           src={bici}
           alt="chica en bici"

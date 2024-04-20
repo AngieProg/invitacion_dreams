@@ -1,24 +1,37 @@
 import { programa } from "../constants";
 import { separador } from "../assets/icons";
+import { fondoSuperior, fondoInferior, mariposa } from "../assets/images";
 
 const Programa = () => {
   return (
-    <section className="flex flex-col justify-center items-center bg-soft-pink py-4 md:py-11">
-      <div className="flex flex-col items-center pt-6">
+    <section className="flex flex-col h-[100vh] justify-center items-center bg-soft-pink py-4 md:py-11 relative">
+       {/* Imagenes top y bottom */}
+       <img
+        src={fondoSuperior}
+        alt="adorno superior"
+        className="w-full h-[140px] top-0 absolute"
+      />
+      <img
+        src={fondoInferior}
+        alt="adorno inferior"
+        className="w-full h-[140px] bottom-0 absolute "
+      />
+      <img
+        src={mariposa}
+        alt="adorno mariposa"
+        className="w-[100px] h-[100px] top-[100px] right-[5px] absolute "
+      />
+      <div className="flex flex-col items-center pt-6 z-10">
         <h1
-          className="font-mea text-4xl mb-1 text-dark-brown md:text-8xl"
+          className="font-mea text-4xl mb-5 text-dark-brown md:text-8xl"
           data-aos="fade-right"
         >
           Programa
         </h1>
-        <img
-          src={separador}
-          alt="Separador"
-          className="w-[150px] md:w-[300px] md:mb-11 mb-8"
-        />
+      
       </div>
       {/* Menu */}
-      <div className="flex flex-col md:flex-row items-center gap-5 md:gap-20">
+      <div className="flex flex-col md:flex-row items-center gap-5 md:gap-20 z-10">
         {programa.map((actividad, index) => (
           <div key={index} className="flex md:flex-col items-center md:gap-10">
             {/* Menu Izquierdo */}

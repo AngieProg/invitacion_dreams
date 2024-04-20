@@ -23,9 +23,13 @@ import iglesiaPrograma from "./iglesiaPrograma.png";
 import valsPrograma from "./valsPrograma.png";
 import recepcionPrograma from "./recepcionPrograma.png";
 import confirmar from "./confirmar.png";
+import mujer from "./mujer.png";
+import hombre from "./hombre.png";
 
 export {
   banner,
+  mujer,
+  hombre,
   confirmar,
   corazon,
   corazones,
