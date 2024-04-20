@@ -9,9 +9,9 @@ const ListaInvitados = () => {
       <img src={magia} alt="banner magia" className="w-full h-auto" />
       <div className="text-white md:px-11 px-6 pt-3 text-justify md:py-10">
         <h2 className="font-mea text-3xl md:text-8xl md:py-8 text-center text-dark-brown mb-2">
-          Valentina
+          Sarita
         </h2>
-        <p className="md:text-2xl md:mb-5 text-xl mb-1 font-mea">
+        <p className="md:text-3xl md:mb-5 text-2xl mb-1 font-mea">
           "Magia Digital te desea el mejor día de tu vida. Estamos agradecidos
           de poder agregar un toque de magia en esta ocasión especial. Que esta
           fecha tan maravillosa, hoy y siempre brilles con toda tu luz."
@@ -46,10 +46,7 @@ const ListaInvitados = () => {
               Nombre
             </th>
             <th className="md:p-3 p-1 border-separate border border-dark-pink">
-              Adultos
-            </th>
-            <th className="md:p-3 p-1 border-separate border border-dark-pink">
-              Niños
+              Boletos
             </th>
             <th className="md:p-3 p-1 border-separate border border-dark-pink">
               URL
@@ -68,13 +65,10 @@ const ListaInvitados = () => {
               <td className="md:p-3 p-1 border-separate border border-dark-pink">
                 {invitado.nombre}
               </td>
-              <td className="md:p-3  p-1border-separate border border-dark-pink">
+              <td className="md:p-3  p-1 border-separate border border-dark-pink">
                 {invitado.adultos}
               </td>
-              <td className="md:p-3 p-1 border-separate border border-dark-pink">
-                {invitado.ninos}
-              </td>
-              <td className="p-3 md:inline hidden border-separate border cursor-pointer hover:text-dark-pink border-dark-pink">
+              <td className="md:p-3 p-1 md:inline hidden border cursor-pointer hover:text-dark-pink border-dark-pink">
                 <Link
                   target={"_blank"}
                   to={`https://magia-digital-invitacion.com/invitado/${invitado.id}`}
