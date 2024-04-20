@@ -35,21 +35,24 @@ const Familia = () => {
       <h2 className="font-sofia text-2xl px-3 text-center text-dark-brown md:text-3xl mb-3">
         Mis Padres
       </h2>
-      <h1
-        className="font-mea text-3xl mb-6 text-center text-dark-brown md:text-6xl"
+      <h2
+        className="font-mea text-[28px] mb-6 text-center text-dark-brown md:text-6xl"
         data-aos="fade-left"
       >
         Esmeralda Velasco Orta <br /> &<br /> Rubén Rodriguez
-      </h1>
+      </h2>
       <h2 className="font-sofia text-2xl px-3 text-center text-dark-brown md:text-3xl mb-1">
         Mi Padrino
       </h2>
-      <h1
+      <h2 className="font-mea text-[26px] px-3 text-center text-dark-brown md:text-3xl mb-1" data-aos="fade-left">
+      Oscar Ángeles Velasco
+      </h2>
+      {/* <h1
         className="font-mea text-3xl mb-2 text-center text-dark-brown md:text-6xl"
         data-aos="fade-left"
       >
         Oscar Ángeles Velasco
-      </h1>
+      </h1> */}
       </div>
     </div>
   );

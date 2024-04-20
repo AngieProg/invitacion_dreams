@@ -38,9 +38,9 @@ const Hero = () => {
         <h1 className="font-mea text-[140px]  text-dark-brown md:text-[175px]" data-aos="zoom-out">
           arita
         </h1>
-      </div>
-      <p className="info-text mb-5 md:text-4xl" data-aos="fade-left">MAYO <span className="semibold text-3.5xl md:text-6xl">25</span> 2025</p>
-      <p className="info-text font-medium uppercase z-10 md:text-3.5xl" data-aos="fade-rig>Capilla Terraza Real</p>
+      </div> 
+      <p className="info-text mb-5 md:text-4xl" data-aos="fade-left">MAYO <span className="semibold text-3.5xl md:text-6xl">25</span> 2024</p>
+      <p className="info-text font-medium uppercase z-10 md:text-3.5xl" data-aos="fade-right">Capilla Terraza Real</p>
     </section>
   );
 };
