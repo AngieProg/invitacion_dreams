@@ -50,7 +50,7 @@ const Contador = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center bg-soft-pink h-[100vh] relative mb-5">
+    <div className="flex flex-col items-center justify-center bg-soft-pink h-[100vh] relative mb-5 md:h-[auto]">
       {/* Imagenes top y bottom */}
       <img
         src={mainSuperior}

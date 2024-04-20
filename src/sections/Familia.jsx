@@ -22,14 +22,14 @@ const Familia = () => {
       <img
         src={manosPadrino}
         alt="manos padrino"
-        className="absolute top-[70px] right-[30px] w-[150px] h-[150px]"
-        //data-aos="zoom-in"
+        className="absolute top-[70px] right-[30px] w-[150px] h-[150px] md:right-[250px] md:w-[250px] md:h-[250px]"
+        data-aos="zoom-in"
       />
       <img
         src={manosPadres}
         alt="manos papas"
-        className="absolute bottom-6 left-[30px] w-[150px] h-[150px]"
-        //data-aos="zoom-in"
+        className="absolute bottom-6 left-[30px] w-[150px] h-[150px] md:w-[250px] md:h-[250px] md:left-[250px]"
+        data-aos="zoom-in"
       /> 
       <div className="z-10 font-bold">
       <h2 className="font-sofia text-2xl px-3 text-center text-dark-brown md:text-3xl mb-3">
@@ -37,7 +37,7 @@ const Familia = () => {
       </h2>
       <h1
         className="font-mea text-3xl mb-6 text-center text-dark-brown md:text-6xl"
-        //data-aos="fade-left"
+        data-aos="fade-left"
       >
         Esmeralda Velasco Orta <br /> &<br /> Rubén Rodriguez
       </h1>
@@ -46,7 +46,7 @@ const Familia = () => {
       </h2>
       <h1
         className="font-mea text-3xl mb-2 text-center text-dark-brown md:text-6xl"
-        //data-aos="fade-left"
+        data-aos="fade-left"
       >
         Oscar Ángeles Velasco
       </h1>

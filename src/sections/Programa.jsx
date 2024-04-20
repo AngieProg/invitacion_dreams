@@ -19,7 +19,8 @@ const Programa = () => {
       <img
         src={mariposa}
         alt="adorno mariposa"
-        className="w-[100px] h-[100px] top-[100px] right-[5px] absolute "
+        className="w-[100px] h-[100px] top-[100px] right-[5px] absolute md:right-[350px] md:top-[130px]"
+        data-aos="zoom-in"
       />
       <div className="flex flex-col items-center pt-6 z-10">
         <h1

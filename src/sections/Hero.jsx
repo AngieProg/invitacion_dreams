@@ -23,23 +23,24 @@ const Hero = () => {
 
       <div className="flex items-center justify-end">
         <h2
-          className="font-mea text-[60px] text-dark-brown md:text-4xl z-10"
-          //data-aos="fade-left"
+          className="font-mea text-[60px] text-dark-brown md:text-8xl z-10"
+          data-aos="fade-left"
         >
           Mis XV
         </h2>
       </div>
-      <div className="flex justify-center items-end mb-5">
+      <div className="flex justify-center items-end mb-5 md:justify-end">
         <img
           src={letraS}
-          className="w-[180px] h-[180px] md:w-[50px] md:h-[50px]"
+          className="w-[180px] h-[180px] md:w-[200px] md:h-[200px]"
+          data-aos="zoom-in"
         />
-        <h1 className="font-mea text-[140px]  text-dark-brown md:text-[75px]">
+        <h1 className="font-mea text-[140px]  text-dark-brown md:text-[175px]" data-aos="zoom-out">
           arita
         </h1>
       </div>
-      <p className="info-text mb-5">MAYO <span className="semibold text-3.5xl">25</span> 2025</p>
-      <p className="info-text font-medium uppercase z-10">Capilla Terraza Real</p>
+      <p className="info-text mb-5 md:text-4xl" data-aos="fade-left">MAYO <span className="semibold text-3.5xl md:text-6xl">25</span> 2025</p>
+      <p className="info-text font-medium uppercase z-10 md:text-3.5xl" data-aos="fade-rig>Capilla Terraza Real</p>
     </section>
   );
 };
